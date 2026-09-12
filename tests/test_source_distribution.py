@@ -30,8 +30,11 @@ class SourceDistributionTest(unittest.TestCase):
             ],
         )
 
-    def test_frozen_checksum_ledger(self) -> None:
-        self.assertEqual(verify_checksums(PACKAGE_ROOT), [])
+    def test_immutable_checksum_ledger(self) -> None:
+        self.assertEqual(
+            verify_checksums(PACKAGE_ROOT, excluded_prefixes=("outputs/",)),
+            [],
+        )
 
 
 if __name__ == "__main__":

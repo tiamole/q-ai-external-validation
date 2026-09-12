@@ -55,7 +55,7 @@ py -3.14 -m venv .venv
 .\.venv\Scripts\python.exe src\verify_checksums.py
 ```
 
-The GitHub Actions workflow executes the same sequence on `windows-latest`. Generated outputs are committed so a rerun can be compared against the frozen checksum ledger.
+The GitHub Actions workflow executes the same sequence on `windows-latest`. Committed outputs are byte-checksummed as the frozen reference snapshot. Fresh runs are checked against the prespecified scientific result contract because last-bit floating-point serialization can vary across BLAS builds.
 
 ## Licensing
 

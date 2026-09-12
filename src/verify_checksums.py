@@ -18,7 +18,10 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def verify_checksums(package_root: Path = PACKAGE_ROOT) -> list[str]:
+def verify_checksums(
+    package_root: Path = PACKAGE_ROOT,
+    excluded_prefixes: tuple[str, ...] = (),
+) -> list[str]:
     root = package_root.resolve()
     manifest = root / "data-manifest" / "sha256sums.txt"
     failures: list[str] = []
@@ -30,6 +33,8 @@ def verify_checksums(package_root: Path = PACKAGE_ROOT) -> list[str]:
             failures.append(f"line {line_number}: malformed checksum entry")
             continue
         expected_hash, relative_path = match.groups()
+        if relative_path.startswith(excluded_prefixes):
+            continue
         target = (root / relative_path).resolve()
         if not target.is_relative_to(root):
             failures.append(f"line {line_number}: path escapes package root")
@@ -50,8 +55,16 @@ def main() -> None:
         description="Verify all frozen source and output SHA-256 checksums."
     )
     parser.add_argument("--package-root", type=Path, default=PACKAGE_ROOT)
+    parser.add_argument(
+        "--exclude-prefix",
+        action="append",
+        default=[],
+        help="Skip manifest paths beginning with this prefix; may be repeated.",
+    )
     args = parser.parse_args()
-    failures = verify_checksums(args.package_root.resolve())
+    failures = verify_checksums(
+        args.package_root.resolve(), tuple(args.exclude_prefix)
+    )
     if failures:
         raise SystemExit("Checksum verification failed:\n" + "\n".join(failures))
     print("All frozen checksums verified.")
