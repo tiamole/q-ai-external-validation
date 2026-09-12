@@ -1,0 +1,251 @@
+{
+  "bootstrap_iterations_per_method": 1000,
+  "classification_note": "Descriptive robustness classes follow the pre-analysis addendum and remain separate from the exact source-reproduction classification.",
+  "extraction_method_comparison": {
+    "absolute_factor_array_correlation": [
+      0.9266666666666666,
+      0.8666666666666667,
+      0.9400000000000001,
+      0.6,
+      0.0
+    ],
+    "candidate_method": "centroid",
+    "matched_centroid_defining_counts": [
+      17,
+      8,
+      6,
+      5,
+      2
+    ],
+    "matched_centroid_factor": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "pca_defining_counts": [
+      16,
+      6,
+      6,
+      4,
+      1
+    ],
+    "pca_factor": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reference_method": "pca"
+  },
+  "interpretability": "pending_independent_assessment",
+  "methods": {
+    "centroid": {
+      "bootstrap": {
+        "factor_recovery_rate_percent": [
+          99.2,
+          91.60000000000001,
+          86.1,
+          70.0,
+          54.400000000000006
+        ],
+        "failed_runs": 0,
+        "failures": [],
+        "fifth_percentile_factor_array_correlation": [
+          0.6333333333333333,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "median_factor_array_correlation": [
+          0.8866666666666667,
+          0.7133333333333334,
+          0.7466666666666667,
+          0.5666666666666667,
+          0.20666666666666667
+        ],
+        "minimum_factor_array_correlation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "runs": 1000,
+        "stable_by_factor": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "factor_stable_under_both": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "leave_one_out": {
+        "factor_recovery_rate_percent": [
+          100.0,
+          100.0,
+          97.87234042553192,
+          63.829787234042556,
+          8.51063829787234
+        ],
+        "failed_runs": 0,
+        "failures": [],
+        "fifth_percentile_factor_array_correlation": [
+          0.8733333333333334,
+          0.7786666666666666,
+          0.8533333333333333,
+          0.0,
+          0.0
+        ],
+        "median_factor_array_correlation": [
+          0.9333333333333335,
+          0.8533333333333333,
+          0.9133333333333333,
+          0.84,
+          0.0
+        ],
+        "minimum_factor_array_correlation": [
+          0.8666666666666667,
+          0.7333333333333333,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "runs": 47,
+        "stable_by_factor": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "reference_defining_counts": [
+        17,
+        8,
+        6,
+        5,
+        2
+      ],
+      "reference_has_minimum_defining_sorts": true,
+      "solution_classification": "fragile_solution",
+      "stable_factor_count": 0
+    },
+    "pca": {
+      "bootstrap": {
+        "factor_recovery_rate_percent": [
+          99.9,
+          99.9,
+          99.9,
+          99.8,
+          0.0
+        ],
+        "failed_runs": 1,
+        "failures": [
+          {
+            "reason": "RuntimeError: Varimax did not converge within 1000 iterations",
+            "run_id": 318804317
+          }
+        ],
+        "fifth_percentile_factor_array_correlation": [
+          0.5596666666666668,
+          0.42,
+          0.34666666666666673,
+          0.23966666666666667,
+          0.0
+        ],
+        "median_factor_array_correlation": [
+          0.8733333333333334,
+          0.6866666666666666,
+          0.7733333333333333,
+          0.56,
+          0.0
+        ],
+        "minimum_factor_array_correlation": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "runs": 1000,
+        "stable_by_factor": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "factor_stable_under_both": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "leave_one_out": {
+        "factor_recovery_rate_percent": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          0.0
+        ],
+        "failed_runs": 0,
+        "failures": [],
+        "fifth_percentile_factor_array_correlation": [
+          0.9466666666666667,
+          0.9133333333333333,
+          0.92,
+          0.6326666666666666,
+          0.0
+        ],
+        "median_factor_array_correlation": [
+          0.9733333333333334,
+          0.9666666666666667,
+          0.9666666666666667,
+          0.9066666666666666,
+          0.0
+        ],
+        "minimum_factor_array_correlation": [
+          0.9333333333333335,
+          0.84,
+          0.8933333333333333,
+          0.42,
+          0.0
+        ],
+        "runs": 47,
+        "stable_by_factor": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "reference_defining_counts": [
+        16,
+        6,
+        6,
+        4,
+        1
+      ],
+      "reference_has_minimum_defining_sorts": false,
+      "solution_classification": "fragile_solution",
+      "stable_factor_count": 0
+    }
+  },
+  "schema_version": "1.0",
+  "study_id": "pidgeon-2025"
+}

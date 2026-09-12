@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "protocol_version": "1.0",
+  "freeze_type": "local_analysis_plan_freeze",
+  "externally_preregistered": false,
+  "frozen_utc": "2026-09-12T11:11:42.0996315Z",
+  "canonical_snapshot": "protocol/Q-AI_EXTERNAL_Q-DATA_VALIDATION_PROTOCOL_v1.0.md",
+  "sha256": "f695d5d7d6320e00e543edff365fb72a48b2ade5861fb321ee74e30f1aa1a4d9",
+  "scope": "Pidgeon source-study reproduction followed by prespecified robustness analyses; no Q-AI secondary analysis before reproduction classification"
+}

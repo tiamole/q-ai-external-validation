@@ -1,0 +1,1 @@
+"""External Q-data validation pipeline."""

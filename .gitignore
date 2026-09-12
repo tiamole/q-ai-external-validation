@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Downloaded upstream artifacts
+/data/original/
+*.part
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

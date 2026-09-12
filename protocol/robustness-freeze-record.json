@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "freeze_type": "local_pre_analysis_robustness_addendum",
+  "externally_preregistered": false,
+  "frozen_utc": "2026-09-12T11:35:54.5051288Z",
+  "addendum": {
+    "path": "protocol/ROBUSTNESS_ADDENDUM_v1.0.yml",
+    "sha256": "024ccfb5105a254bfc3691cf8f2ceeeff360dd600ca85ee0ca4ce28cb192d2c0"
+  },
+  "bootstrap_seed_list": {
+    "path": "protocol/bootstrap-seeds.txt",
+    "count": 1000,
+    "sha256": "468e9cf3b83fc98b5d5d700b992716ed69655a54757276593d9b37baa1bea03e"
+  },
+  "timing_note": "Frozen after exact source reproduction and before any Stage D robustness computation."
+}

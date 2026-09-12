@@ -1,0 +1,6 @@
+et_xmlfile==2.0.0
+numpy==2.5.3
+openpyxl==3.1.5
+PyPDF2==3.0.1
+PyYAML==6.0.3
+scipy==1.18.1

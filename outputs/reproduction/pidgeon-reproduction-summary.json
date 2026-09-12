@@ -1,0 +1,387 @@
+{
+  "alignment": {
+    "factor_loading_correlations": [
+      0.9999996563227447,
+      0.9999996593476562,
+      0.99999961859419,
+      0.9999985562510431,
+      0.9999978792535004
+    ],
+    "reproduced_factor_by_source_factor": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "signs": [
+      1,
+      1,
+      -1,
+      -1,
+      1
+    ]
+  },
+  "consensus_statements": {
+    "source": "Pidgeon thesis Table 6.1",
+    "source_reported_count": 0
+  },
+  "distinguishing_statement_direction": {
+    "agreement_percent": 100.0,
+    "comparisons": [
+      {
+        "expected_direction": "higher",
+        "factor": 1,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D",
+        "statement_id": "s2"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 1,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D",
+        "statement_id": "s25"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 1,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s23"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 1,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D*",
+        "statement_id": "s17"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 1,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s27"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s3"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s1"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s6"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s4"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s34"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 2,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D*",
+        "statement_id": "s24"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s32"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s29"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s43"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s38"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s31"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 3,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s8"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 4,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s30"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 4,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s33"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 4,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s15"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s9"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s11"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D",
+        "statement_id": "s45"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s36"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s27"
+      },
+      {
+        "expected_direction": "higher",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "higher",
+        "source_marker": "D*",
+        "statement_id": "s35"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D*",
+        "statement_id": "s13"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s2"
+      },
+      {
+        "expected_direction": "lower",
+        "factor": 5,
+        "matches": true,
+        "observed_direction": "lower",
+        "source_marker": "D",
+        "statement_id": "s43"
+      }
+    ],
+    "matched_pairs": 29,
+    "source_marked_pairs": 29
+  },
+  "eigenvalues": [
+    15.109346463097895,
+    3.9597822330955728,
+    3.0233705601281073,
+    2.577390322296539,
+    1.7613850062485314,
+    1.693324366928977,
+    1.6353037075204664,
+    1.526721288891012
+  ],
+  "factor_array_comparison": {
+    "factor_array_correlations": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "integer_scores_identical": true,
+    "matching_scores_by_factor": [
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "scores_per_factor": 45
+  },
+  "loading_comparison": {
+    "absolute_tolerance": 0.01,
+    "maximum_absolute_difference_by_factor": [
+      0.0006444458793911367,
+      0.0003867624392699387,
+      0.0006651140810629563,
+      0.0008587269205670017,
+      0.0010474757013507197
+    ],
+    "mean_absolute_difference_by_factor": [
+      0.0001887605980953793,
+      0.0001657827420482144,
+      0.00020868341912425376,
+      0.0002838652962970246,
+      0.00036710558768505053
+    ],
+    "status": "exact_numerical_reproduction"
+  },
+  "method": {
+    "extraction": "principal components",
+    "factor_alignment": "Hungarian assignment on absolute factor correlations with sign reversal",
+    "matrix": "by-person Pearson correlation",
+    "retained_factors": 5,
+    "rotation": "varimax with Kaiser row normalization",
+    "varimax_iterations": 99
+  },
+  "overall_reproduction_classification": "exact_numerical_reproduction",
+  "p47_exclusion_sensitivity": {
+    "factor_correlations_with_full_solution": [
+      0.9963244241509861,
+      0.9975386311960854,
+      0.994544409826953,
+      0.9933536335472698,
+      0.9717937661423297
+    ],
+    "participants": 46,
+    "variance_percent": [
+      20.731196821181257,
+      13.141863597375044,
+      9.709646640680234,
+      8.180896338060393,
+      4.658479844265835
+    ]
+  },
+  "primary_factor_assignment": {
+    "agreement_percent": 100.0,
+    "note": "Primary-factor memberships reconstruct the published composite arrays; they are not treated as the unrecoverable color-coded significant-sort identities.",
+    "reproduced_counts": [
+      20,
+      7,
+      10,
+      7,
+      3
+    ],
+    "source_counts": [
+      20,
+      7,
+      10,
+      7,
+      3
+    ]
+  },
+  "schema_version": "1.0",
+  "source_loading_table": {
+    "factors": 5,
+    "participants": 47,
+    "source": "Pidgeon thesis Table 6.2"
+  },
+  "source_reported_variance_percent": [
+    21,
+    9,
+    12,
+    9,
+    5
+  ],
+  "source_reporting_limitation": "The thesis reports 32 significant Q-sorts, but participant identities are encoded partly by color in Table 6.2 and are not recoverable reliably from PDF text extraction.",
+  "study_id": "pidgeon-2025",
+  "variance_percent": [
+    21.02149188489307,
+    9.377629692710485,
+    12.385780513777611,
+    8.628823389078974,
+    4.823028955426316
+  ],
+  "variance_percent_rounded": [
+    21,
+    9,
+    12,
+    9,
+    5
+  ]
+}

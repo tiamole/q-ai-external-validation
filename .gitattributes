@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.pdf binary
+*.xlsx binary
+
+# These frozen artifacts predate Git publication; preserve their recorded bytes.
+/protocol/Q-AI_EXTERNAL_Q-DATA_VALIDATION_PROTOCOL_v1.0.md -text
+/protocol/ROBUSTNESS_ADDENDUM_v1.0.yml -text
+/protocol/bootstrap-seeds.txt -text
+/data-manifest/pidgeon-source-factor-arrays.csv -text
+/data-manifest/pidgeon-source-distinguishing-statements.csv -text

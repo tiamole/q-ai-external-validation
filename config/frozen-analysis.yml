@@ -1,0 +1,65 @@
+schema_version: "1.0"
+study:
+  id: pidgeon-2025
+  title: "A Q Methodology Study of Why Some People Love Mathematics"
+  dataset_doi: "10.25946/30122956.v1"
+  thesis_doi: "10.25946/30736379"
+
+input:
+  workbook: "data/original/pidgeon-2025/Participants Q sorts.xlsx"
+  worksheet: "Q Sort "
+  participant_column: "participant"
+  participant_id_pattern: "^P[1-9][0-9]*$"
+  statement_columns:
+    prefix: "s"
+    first: 1
+    last: 45
+  expected_participants: 47
+  expected_statements: 45
+
+forced_distribution:
+  - {score: -4, count: 1}
+  - {score: -3, count: 3}
+  - {score: -2, count: 6}
+  - {score: -1, count: 8}
+  - {score: 0, count: 9}
+  - {score: 1, count: 8}
+  - {score: 2, count: 6}
+  - {score: 3, count: 3}
+  - {score: 4, count: 1}
+
+prespecified_repair:
+  source_cell: "Q Sort !C48"
+  participant_id: "P47"
+  statement_id: "s2"
+  raw_value: -14
+  normalized_value: 1
+  sensitivity: "repeat_without_P47"
+  any_other_malformed_sort: "stop"
+
+source_reproduction:
+  matrix: "by-person Pearson correlation"
+  reported_software: "KADE"
+  extraction: "principal_components"
+  rotation: "varimax"
+  retained_factors: 5
+  reported_loading_threshold: 0.384
+  reported_probability_text: "p < .001"
+  reported_formula: "2.58 / sqrt(45)"
+  formula_probability_convention: "p < .01"
+  factor_count_basis:
+    - "eigenvalues greater than 1 considered"
+    - "four- through eight-factor solutions compared"
+    - "five-factor solution selected for five unique voices and fewer confounded sorts"
+  source_reported_total_variance_percent: 56
+
+reproduction_classification:
+  loading_absolute_tolerance: 0.01
+  factor_array_correlation_material: 0.95
+  defining_sort_agreement_percent_material: 90
+  distinguishing_direction_agreement_percent_material: 90
+
+prohibitions:
+  - "Do not modify files under data/original."
+  - "Do not tune settings to improve agreement."
+  - "Do not run a Q-AI extension before source reproduction is classified."

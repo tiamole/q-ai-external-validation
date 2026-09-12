@@ -1,0 +1,30 @@
+{
+  "derived_files": {
+    "exclusion_matrix": "data/normalized/pidgeon-2025/qsorts_without_P47.csv",
+    "repair_log": "outputs/integrity/repair-log.csv",
+    "repaired_matrix": "data/normalized/pidgeon-2025/qsorts_repaired.csv"
+  },
+  "input": {
+    "path": "data/original/pidgeon-2025/Participants Q sorts.xlsx",
+    "sha256": "eb0d9e7babeea9d3f1d5dd41cde96da1d1cde234eee5317942cb2e93c1448da1",
+    "worksheet": "Q Sort "
+  },
+  "observed": {
+    "duplicate_sort_groups": [],
+    "participants": 47,
+    "repairs": [
+      {
+        "normalized_value": 1,
+        "participant_id": "P47",
+        "raw_value": -14,
+        "rule": "unique forced-distribution completion",
+        "source_cell": "Q Sort !C48",
+        "statement_id": "s2"
+      }
+    ],
+    "statements": 45
+  },
+  "schema_version": "1.0",
+  "status": "pass",
+  "study_id": "pidgeon-2025"
+}

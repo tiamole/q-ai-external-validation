@@ -1,0 +1,67 @@
+schema_version: "1.0"
+status: "frozen before robustness computation"
+freeze_date: "2026-09-12"
+parent_protocol: "Q-AI_EXTERNAL_Q-DATA_VALIDATION_PROTOCOL_v1.0.md"
+reason: >-
+  Stage D prespecified the analysis families but did not state the simulation counts,
+  seeds, null-generation rule, numeric confounding margin, or descriptive robustness
+  classification. This addendum fixes those choices before robustness outputs are run.
+
+factor_counts:
+  first: 2
+  last: 8
+
+parallel_analysis:
+  iterations: 1000
+  seed: 2026091201
+  null_model: "independently permute the 45 observed scores within each participant"
+  percentile: 95
+  quantile_method: "higher"
+
+scree:
+  method: "maximum acceleration"
+  components_considered: 10
+
+defining_sorts:
+  p01_threshold_formula: "2.58 / sqrt(number_of_statements)"
+  source_threshold: 0.384
+  confounding_margin_absolute_loading: 0.10
+  rule: >-
+    A defining sort must meet the selected loading threshold on its largest absolute
+    loading and exceed its second-largest absolute loading by at least 0.10.
+  minimum_per_factor: 2
+
+centroid:
+  reference: "CRAN qmethod 1.8.4 centroid(), based on Brown (1980), pp. 208-224"
+  convergence_threshold: 0.00001
+  rotation: "varimax with Kaiser normalization"
+
+leave_one_sort_out:
+  factor_count: 5
+  extraction_methods: ["pca", "centroid"]
+  material_factor_array_correlation: 0.95
+
+bootstrap:
+  iterations_per_method: 1000
+  extraction_methods: ["pca", "centroid"]
+  resampling_unit: "participant Q-sort with replacement"
+  seed_generation:
+    algorithm: "numpy.random.SeedSequence.spawn"
+    master_seed: 2026091202
+    generated_state_words: 1
+    output_file: "protocol/bootstrap-seeds.txt"
+
+descriptive_robustness_classification:
+  stable_factor:
+    leave_one_out_fifth_percentile_correlation_minimum: 0.95
+    bootstrap_median_correlation_minimum: 0.95
+    bootstrap_fifth_percentile_correlation_minimum: 0.80
+  stable_solution: "all five factors stable and every full-data factor has at least two defining sorts"
+  mixed_solution: "three or four factors stable"
+  fragile_solution: "fewer than three factors stable"
+  interpretation_status: "record independently; not inferred from numerical diagnostics"
+
+failure_handling:
+  - "A factor with fewer than two defining sorts is counted as not recovered."
+  - "A nonconvergent extraction or rotation is counted as not recovered, not discarded."
+  - "Failed bootstrap factor recovery contributes correlation zero to stability summaries."

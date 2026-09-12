@@ -1,0 +1,2 @@
+source_cell,participant_id,statement_id,raw_value,normalized_value,rule
+Q Sort !C48,P47,s2,-14,1,unique forced-distribution completion
